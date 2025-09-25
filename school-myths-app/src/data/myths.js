@@ -158,6 +158,26 @@ export const myths = [
         url: "https://www.smithsonianmag.com/history/napoleon-complex-105391946/"
       }
     ]
+  },
+  {
+    id: 9,
+    category: "Biology",
+    myth: "The Food Guide Pyramid shows the healthiest way to eat",
+    fact: "The Food Pyramid was criticized for industry influence and unclear guidance, and was replaced by MyPlate in 2011.",
+    details: "The USDA's 1992 Food Guide Pyramid was influenced by food industry lobbying, leading to potentially misleading recommendations. Critics noted that fat recommendations were problematic, protein groups lacked meaningful differentiation, and dairy sections were oversized. The pyramid's design made serving sizes unclear and some choices linked to heart disease were technically permitted.",
+    taughtDuring: { start: 1992, end: 2011 }, // Official USDA guidance period
+    references: [
+      {
+        title: "Food Pyramid (Nutrition)",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Food_pyramid_(nutrition)"
+      },
+      {
+        title: "MyPlate Replaces the Food Pyramid",
+        source: "USDA",
+        url: "https://www.usda.gov/media/blog/2011/06/02/myplate-replaces-food-pyramid"
+      }
+    ]
   }
 ];
 

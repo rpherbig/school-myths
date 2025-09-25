@@ -7,7 +7,7 @@ A React web application that separates fact from fiction in things we learned in
 ## Features
 
 ### 🧠 Educational Content
-- **8+ Common Myths** debunked with scientific explanations
+- **9+ Common Myths** debunked with scientific explanations
 - **Credible Sources** from Scientific American, NASA, Nature, and other reputable publications
 - **Detailed Explanations** of why each myth persists and what the truth actually is
 - **Multiple Categories** including Biology, Physics, History, and Astronomy
@@ -40,6 +40,7 @@ A React web application that separates fact from fiction in things we learned in
 - 💀 **Hair Growth After Death** - Hair and fingernails continue growing after death
 - 🏛️ **Great Wall Visibility** - You can see the Great Wall of China from space
 - 👑 **Napoleon's Height** - Napoleon was unusually short for his time
+- 🍎 **Food Guide Pyramid** - The Food Pyramid shows the healthiest way to eat
 
 ## Technical Implementation
 
