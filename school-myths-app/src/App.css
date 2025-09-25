@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
 }
 
 .app-header {
@@ -21,6 +22,21 @@
   font-size: 1.1rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  .app {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+
+  .app-header h1 {
+    color: #ffffff;
+  }
+
+  .app-header p {
+    color: #cccccc;
+  }
+}
+
 .category-filter {
   display: flex;
   justify-content: center;
@@ -33,6 +49,7 @@
   padding: 0.75rem 1.5rem;
   border: 2px solid #e0e0e0;
   background: white;
+  color: #333;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -62,6 +79,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
+  border: 1px solid #e9ecef;
 }
 
 .myth-card:hover {
@@ -145,6 +163,49 @@
 
 .details-toggle:hover {
   background: #0056b3;
+}
+
+@media (prefers-color-scheme: dark) {
+  .category-btn {
+    border-color: #444444;
+    background: #2a2a2a;
+    color: #ffffff;
+  }
+
+  .myth-card {
+    background: #2a2a2a;
+    border-color: #404040;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .myth-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  }
+
+  .myth-header {
+    background: #333333;
+    border-bottom-color: #404040;
+  }
+
+  .myth-section h4 {
+    color: #cccccc;
+  }
+
+  .myth-section p {
+    color: #e0e0e0;
+  }
+
+  .myth-false {
+    background: #3a2a2a;
+  }
+
+  .myth-true {
+    background: #2a3a2a;
+  }
+
+  .myth-details {
+    background: #2a2a3a;
+  }
 }
 
 @media (max-width: 768px) {
