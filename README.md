@@ -7,10 +7,10 @@ A React web application that separates fact from fiction in things we learned in
 ## Features
 
 ### 🧠 Educational Content
-- **9+ Common Myths** debunked with scientific explanations
-- **Credible Sources** from Scientific American, NASA, Nature, and other reputable publications
+- **10+ Common Myths** debunked with scientific explanations
+- **Credible Sources** from Scientific American, NASA, Nature, NOAA, and other reputable publications
 - **Detailed Explanations** of why each myth persists and what the truth actually is
-- **Multiple Categories** including Biology, Physics, History, and Astronomy
+- **Multiple Categories** including Biology, Physics, History, Astronomy, and Geography
 
 ### 🎯 Personal Experience
 - **Birth Year Selector** to see myths you likely learned in school
@@ -41,6 +41,7 @@ A React web application that separates fact from fiction in things we learned in
 - 🏛️ **Great Wall Visibility** - You can see the Great Wall of China from space
 - 👑 **Napoleon's Height** - Napoleon was unusually short for his time
 - 🍎 **Food Guide Pyramid** - The Food Pyramid shows the healthiest way to eat
+- 🌊 **Four Oceans** - There are four named oceans on Earth
 
 ## Technical Implementation
 

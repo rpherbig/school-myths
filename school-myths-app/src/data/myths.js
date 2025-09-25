@@ -178,7 +178,27 @@ export const myths = [
         url: "https://www.usda.gov/media/blog/2011/06/02/myplate-replaces-food-pyramid"
       }
     ]
+  },
+  {
+    id: 10,
+    category: "Geography",
+    myth: "There are four named oceans on Earth",
+    fact: "There are now five officially recognized oceans, including the Southern Ocean around Antarctica.",
+    details: "For decades, geography textbooks taught that Earth had four oceans: Atlantic, Pacific, Indian, and Arctic. The U.S. Board on Geographic Names proposed the Southern Ocean in 2000, defined as waters from Antarctica's coast to 60 degrees South latitude. National Geographic officially recognized it as the fifth ocean on June 8, 2021, defining it by the Antarctic Circumpolar Current. This recognition aims to draw attention to the unique ecosystem and conservation needs of Antarctic waters.",
+    taughtDuring: { start: 1950, end: 2020 }, // When 4-ocean model was standard in education
+    references: [
+      {
+        title: "How many oceans are there?",
+        source: "NOAA Ocean Service",
+        url: "https://oceanservice.noaa.gov/facts/howmanyoceans.html"
+      },
+      {
+        title: "There's a new ocean now—can you name all 5?",
+        source: "National Geographic",
+        url: "https://www.nationalgeographic.com/environment/article/theres-a-new-ocean-now-can-you-name-all-five-southern-ocean"
+      }
+    ]
   }
 ];
 
-export const categories = ["All", "Biology", "Physics", "History", "Astronomy"];
+export const categories = ["All", "Biology", "Physics", "History", "Astronomy", "Geography"];
