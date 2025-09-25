@@ -5,7 +5,11 @@
       "Bash(npx create-vite@latest:*)",
       "WebFetch(domain:en.wikipedia.org)",
       "WebFetch(domain:oceanservice.noaa.gov)",
-      "WebFetch(domain:www.nationalgeographic.com)"
+      "WebFetch(domain:www.nationalgeographic.com)",
+      "WebFetch(domain:www.thehenryford.org)",
+      "WebFetch(domain:www.nps.gov)",
+      "WebFetch(domain:www.archives.gov)",
+      "WebFetch(domain:www.biography.com)"
     ],
     "deny": [],
     "ask": []

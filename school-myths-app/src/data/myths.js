@@ -198,6 +198,26 @@ export const myths = [
         url: "https://www.nationalgeographic.com/environment/article/theres-a-new-ocean-now-can-you-name-all-five-southern-ocean"
       }
     ]
+  },
+  {
+    id: 11,
+    category: "History",
+    myth: "Rosa Parks refused to give up her bus seat because she was tired",
+    fact: "Rosa Parks was a trained civil rights activist who made a deliberate act of resistance, not a spontaneous decision due to fatigue.",
+    details: "This oversimplified narrative is commonly taught in schools but ignores Parks' extensive background as an NAACP activist since 1943. She herself said: 'The only tired I was, was tired of giving in.' Parks had been investigating racial injustices and attending civil rights meetings for years. Her December 1, 1955 refusal was a calculated act of civil disobedience, not an impulsive moment of physical exhaustion.",
+    taughtDuring: { start: 1960, end: 2010 }, // Simplified narrative commonly taught
+    references: [
+      {
+        title: "Rosa Parks",
+        source: "Biography.com",
+        url: "https://www.biography.com/activists/rosa-parks"
+      },
+      {
+        title: "Rosa Parks",
+        source: "National Archives",
+        url: "https://www.archives.gov/education/lessons/rosa-parks"
+      }
+    ]
   }
 ];
 
