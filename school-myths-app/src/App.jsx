@@ -6,6 +6,7 @@ import './App.css'
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('All')
   const [birthYear, setBirthYear] = useState(null)
+  const [showPersonalOnly, setShowPersonalOnly] = useState(false)
 
   // Calculate school years (ages 5-18)
   const getSchoolYears = (birthYear) => {
@@ -27,9 +28,24 @@ function App() {
 
   const schoolYears = getSchoolYears(birthYear)
 
-  const filteredMyths = selectedCategory === 'All'
-    ? myths
-    : myths.filter(myth => myth.category === selectedCategory)
+  // Filter myths based on selected category and personal filter
+  const filteredMyths = () => {
+    let filtered = myths
+
+    // First filter by category
+    if (selectedCategory !== 'All') {
+      filtered = filtered.filter(myth => myth.category === selectedCategory)
+    }
+
+    // Then filter by personal if enabled
+    if (showPersonalOnly) {
+      filtered = filtered.filter(myth => wasLikelyTaught(myth, schoolYears))
+    }
+
+    return filtered
+  }
+
+  const displayedMyths = filteredMyths()
 
   return (
     <div className="app">
@@ -45,7 +61,14 @@ function App() {
         <select
           id="birth-year"
           value={birthYear || ''}
-          onChange={(e) => setBirthYear(e.target.value ? parseInt(e.target.value) : null)}
+          onChange={(e) => {
+            const newBirthYear = e.target.value ? parseInt(e.target.value) : null
+            setBirthYear(newBirthYear)
+            // Reset personal filter if birth year is cleared
+            if (!newBirthYear) {
+              setShowPersonalOnly(false)
+            }
+          }}
           className="birth-year-select"
         >
           <option value="">Select your birth year</option>
@@ -65,20 +88,35 @@ function App() {
         )}
       </div>
 
-      <div className="category-filter">
-        {categories.map(category => (
-          <button
-            key={category}
-            className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
-            onClick={() => setSelectedCategory(category)}
-          >
-            {category}
-          </button>
-        ))}
+      <div className="filters-section">
+        <div className="category-filter">
+          {categories.map(category => (
+            <button
+              key={category}
+              className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        {birthYear && (
+          <div className="personal-filter">
+            <label className="personal-toggle">
+              <input
+                type="checkbox"
+                checked={showPersonalOnly}
+                onChange={(e) => setShowPersonalOnly(e.target.checked)}
+              />
+              <span className="toggle-text">🎓 Show only myths I learned in school</span>
+            </label>
+          </div>
+        )}
       </div>
 
       <main className="myths-container">
-        {filteredMyths.map(myth => (
+        {displayedMyths.map(myth => (
           <MythCard
             key={myth.id}
             myth={myth}
