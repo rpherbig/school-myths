@@ -113,13 +113,16 @@ Automated dependency updates configured for the npm project:
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/new-myth`
-3. Add your myth to `src/data/myths.js` with:
-   - Proper categorization
-   - Credible references
-   - Teaching period estimates
-4. Test locally: `npm run dev`
-5. Create a pull request
-6. Tag `@claude` for automated review
+3. Add your myth to `src/data/myths.js` following [CONTRIBUTING.md](CONTRIBUTING.md):
+   - **⚠️ CRITICAL**: Verify all URLs work before adding them
+   - Proper categorization with credible references
+   - Teaching period estimates based on research
+4. Validate URLs: `npm run validate-urls`
+5. Test locally: `npm run dev`
+6. Create a pull request
+7. Tag `@claude` for automated review
+
+**See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on URL verification and source standards.**
 
 ### Adding New Myths
 When adding myths, include:

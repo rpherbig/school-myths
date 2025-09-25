@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(npm create:*)",
-      "Bash(npx create-vite@latest:*)"
+      "Bash(npx create-vite@latest:*)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:oceanservice.noaa.gov)",
+      "WebFetch(domain:www.nationalgeographic.com)"
     ],
     "deny": [],
     "ask": []
