@@ -37,6 +37,50 @@
   }
 }
 
+.birth-year-selector {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px dashed #dee2e6;
+}
+
+.birth-year-selector label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: #495057;
+}
+
+.optional {
+  font-weight: 400;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.birth-year-select {
+  padding: 0.5rem 1rem;
+  border: 2px solid #ced4da;
+  border-radius: 8px;
+  background: white;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.birth-year-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.school-years-info {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #28a745;
+  font-weight: 500;
+}
+
 .category-filter {
   display: flex;
   justify-content: center;
@@ -91,6 +135,11 @@
   padding: 1rem;
   background: #f8f9fa;
   border-bottom: 1px solid #e9ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .category-badge {
@@ -100,6 +149,27 @@
   border-radius: 15px;
   font-size: 0.85rem;
   font-weight: 500;
+}
+
+.personal-badge {
+  background: #28a745;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.personal-myth {
+  border: 2px solid #28a745;
+  box-shadow: 0 4px 6px rgba(40, 167, 69, 0.15);
+}
+
+.personal-myth:hover {
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.25);
 }
 
 .myth-content {
@@ -150,6 +220,45 @@
   border-left: 4px solid #4299e1;
 }
 
+.myth-references {
+  background: #fefcf7;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #d69e2e;
+}
+
+.references-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.reference-item {
+  margin-bottom: 0.75rem;
+}
+
+.reference-item:last-child {
+  margin-bottom: 0;
+}
+
+.reference-link {
+  color: #2b6cb0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.reference-link:hover {
+  color: #1a365d;
+  text-decoration: underline;
+}
+
+.reference-source {
+  color: #718096;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 .details-toggle {
   width: 100%;
   padding: 1rem;
@@ -166,10 +275,46 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .birth-year-selector {
+    background: #333333;
+    border-color: #555555;
+  }
+
+  .birth-year-selector label {
+    color: #ffffff;
+  }
+
+  .optional {
+    color: #cccccc;
+  }
+
+  .birth-year-select {
+    background: #2a2a2a;
+    border-color: #555555;
+    color: #ffffff;
+  }
+
+  .birth-year-select:focus {
+    border-color: #007bff;
+  }
+
+  .school-years-info {
+    color: #4ade80;
+  }
+
   .category-btn {
     border-color: #444444;
     background: #2a2a2a;
     color: #ffffff;
+  }
+
+  .personal-myth {
+    border-color: #4ade80;
+    box-shadow: 0 4px 6px rgba(74, 222, 128, 0.15);
+  }
+
+  .personal-myth:hover {
+    box-shadow: 0 8px 25px rgba(74, 222, 128, 0.25);
   }
 
   .myth-card {
@@ -205,6 +350,22 @@
 
   .myth-details {
     background: #2a2a3a;
+  }
+
+  .myth-references {
+    background: #3a3a2a;
+  }
+
+  .reference-link {
+    color: #63b3ed;
+  }
+
+  .reference-link:hover {
+    color: #90cdf4;
+  }
+
+  .reference-source {
+    color: #a0aec0;
   }
 }
 
