@@ -45,7 +45,7 @@ function App() {
     return filtered
   }
 
-  const mythsToShow = filteredMyths()
+  const displayedMyths = filteredMyths()
 
   return (
     <div className="app">
@@ -116,7 +116,7 @@ function App() {
       </div>
 
       <main className="myths-container">
-        {mythsToShow.map(myth => (
+        {displayedMyths.map(myth => (
           <MythCard
             key={myth.id}
             myth={myth}
