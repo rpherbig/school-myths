@@ -20,7 +20,11 @@
       "WebFetch(domain:www.sciencefocus.com)",
       "WebFetch(domain:www.press.jhu.edu)",
       "WebFetch(domain:books.google.tt)",
-      "WebFetch(domain:pubmed.ncbi.nlm.nih.gov)"
+      "WebFetch(domain:pubmed.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:www.salem.org)",
+      "WebFetch(domain:historyofmassachusetts.org)",
+      "WebFetch(domain:www.history.com)",
+      "WebFetch(domain:www.etamu.edu)"
     ],
     "deny": [],
     "ask": []

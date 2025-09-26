@@ -278,6 +278,26 @@ export const myths = [
         url: "https://learn.genetics.utah.edu/content/senses/twentysenses/"
       }
     ]
+  },
+  {
+    id: 15,
+    category: "History",
+    myth: "Accused women were burned at the stake during the Salem Witch Trials",
+    fact: "No one was burned at the stake during the Salem Witch Trials. All 19 victims were executed by hanging.",
+    details: "This common misconception likely stems from confusion with European witch trials, where burning was more common. In Salem, witchcraft was treated as a felony under colonial law, not heresy under church law. The 19 executed victims were hanged at Gallows Hill, and one man, Giles Corey, was pressed to death with stones for refusing to enter a plea. Burning at the stake was used in Europe for heresy cases, but American colonial law used hanging for witchcraft convictions.",
+    taughtDuring: { start: 1950, end: 2010 }, // Common historical misconception
+    references: [
+      {
+        title: "Were Witches Burned at the Stake During the Salem Witch Trials?",
+        source: "History.com",
+        url: "https://www.history.com/articles/were-witches-burned-at-the-stake-during-the-salem-witch-trials"
+      },
+      {
+        title: "TAMUC History Professor Busts Myths About the Salem Witch Trials",
+        source: "Texas A&M University",
+        url: "https://www.etamu.edu/tamuc-history-professor-busts-myths-about-the-salem-witch-trials/"
+      }
+    ]
   }
 ];
 
