@@ -46,8 +46,8 @@ jobs:
           # assignee_trigger: "claude-bot"
 
           # Configure Claude's behavior with CLI arguments
-          #claude_args: |
-          #  --allowedTools ""mcp__github_inline_comment__create_inline_comment,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*)""
+          claude_args: |
+            --allowedTools ""Bash(gh pr create:*)""
           #  --system-prompt "When creating pull requests, use helper scripts: ./scripts/create-pr.sh 'Title' 'Body' (preferred) or ./scripts/create-pr-api.sh 'Title' 'Body' 'branch' 'base' (fallback). Do not use gh pr create with heredocs as they are blocked by security policies. Both scripts avoid the security restrictions of complex shell patterns."
 
           # Optional: Advanced settings configuration
