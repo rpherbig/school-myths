@@ -27,7 +27,11 @@
       "WebFetch(domain:www.etamu.edu)",
       "WebFetch(domain:genetic.org)",
       "WebFetch(domain:scienceline.org)",
-      "WebFetch(domain:www.asrm.org)"
+      "WebFetch(domain:www.asrm.org)",
+      "WebFetch(domain:www.mountvernon.org)",
+      "WebFetch(domain:www.smithsonianmag.com)",
+      "WebFetch(domain:www.granburydentalcenter.com)",
+      "WebFetch(domain:www.dakotadental.com)"
     ],
     "deny": [],
     "ask": []

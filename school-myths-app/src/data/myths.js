@@ -318,6 +318,26 @@ export const myths = [
         url: "https://www.asrm.org/advocacy-and-policy/fact-sheets-and-one-pagers/just-the-facts-biological-sex/"
       }
     ]
+  },
+  {
+    id: 17,
+    category: "History",
+    myth: "George Washington had wooden teeth",
+    fact: "George Washington's dentures were made from hippopotamus ivory, gold, brass, and human teeth - not wood.",
+    details: "This persistent myth likely arose because ivory dentures would become stained and discolored, potentially resembling wood. Washington's dentures were actually sophisticated devices made from various materials including hippopotamus ivory, elephant ivory, brass, gold, lead, and human teeth. His dentist was Dr. John Greenwood, and the dentures used metal springs and fasteners. By the time he became president, Washington had lost nearly all his natural teeth.",
+    taughtDuring: { start: 1900, end: 2000 }, // Long-standing historical misconception
+    references: [
+      {
+        title: "George Washington's teeth",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/George_Washington%27s_teeth"
+      },
+      {
+        title: "Wooden Teeth Myth",
+        source: "Mount Vernon",
+        url: "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/wooden-teeth-myth"
+      }
+    ]
   }
 ];
 
