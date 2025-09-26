@@ -238,6 +238,26 @@ export const myths = [
         url: "https://www.adfg.alaska.gov/index.cfm?adfg=wildlifenews.view_article&articles_id=56"
       }
     ]
+  },
+  {
+    id: 13,
+    category: "Biology",
+    myth: "Everyone has a specific learning style (visual, auditory, kinesthetic)",
+    fact: "Learning styles have little scientific support. Research shows no academic benefit from matching teaching methods to supposed learning preferences.",
+    details: "Despite being a pervasive belief in education, scientific research finds no evidence that people learn better when instruction matches their preferred 'learning style.' Studies show that 70% of students don't even use study strategies matching their self-reported style, and those who do show no academic benefit. More effective universal strategies include spaced practice, self-testing, and experiencing material in multiple ways. The learning styles myth persists because it makes people feel unique and avoids more effortful learning techniques.",
+    taughtDuring: { start: 1980, end: 2020 }, // Peak popularity in teacher training and education
+    references: [
+      {
+        title: "The Problem with Learning Styles",
+        source: "Scientific American",
+        url: "https://www.scientificamerican.com/article/the-problem-with-learning-styles/"
+      },
+      {
+        title: "Learning Styles: Myth or Reality?",
+        source: "American Psychological Association",
+        url: "https://www.apa.org/news/press/releases/2019/05/learning-styles-myth"
+      }
+    ]
   }
 ];
 

@@ -11,7 +11,11 @@
       "WebFetch(domain:www.archives.gov)",
       "WebFetch(domain:www.biography.com)",
       "WebFetch(domain:www.britannica.com)",
-      "WebFetch(domain:www.adfg.alaska.gov)"
+      "WebFetch(domain:www.adfg.alaska.gov)",
+      "WebFetch(domain:www.usgs.gov)",
+      "WebFetch(domain:www.bostonteapartyship.com)",
+      "WebFetch(domain:www.scientificamerican.com)",
+      "WebFetch(domain:www.apa.org)"
     ],
     "deny": [],
     "ask": []
