@@ -7,7 +7,7 @@ A React web application that separates fact from fiction in things we learned in
 ## Features
 
 ### 🧠 Educational Content
-- **10+ Common Myths** debunked with scientific explanations
+- **Many Common Myths** debunked with scientific explanations
 - **Credible Sources** from Scientific American, NASA, Nature, NOAA, and other reputable publications
 - **Detailed Explanations** of why each myth persists and what the truth actually is
 - **Multiple Categories** including Biology, Physics, History, Astronomy, and Geography
@@ -15,55 +15,26 @@ A React web application that separates fact from fiction in things we learned in
 ### 🎯 Personal Experience
 - **Birth Year Selector** to see myths you likely learned in school
 - **Personal Myth Highlighting** with green borders and badges
-- **School Years Calculator** (ages 5-18) to determine your education period
 - **Teaching Period Data** based on when myths were commonly taught in curricula
 
 ### 🔍 Smart Filtering
 - **Category Filters** to browse by subject (Biology, Physics, History, etc.)
 - **Personal Filter Toggle** to show only myths from your school era
-- **Combinable Filters** - view personal Biology myths, personal History myths, etc.
-- **Responsive Design** that works on desktop, tablet, and mobile
 
 ### 🌙 Great User Experience
+- **Responsive Design** that works on desktop, tablet, and mobile
 - **Automatic Dark Mode** support based on system preferences
-- **Expandable Cards** with "Learn More" details and references
-- **Hover Effects** and smooth animations
 - **Accessible Design** with proper ARIA labels and keyboard navigation
 
 ## Examples of Myths Covered
 
 - 🍭 **Tongue Taste Map** - Different parts of your tongue taste different flavors
-- ⚡ **Lightning Strikes** - Lightning never strikes the same place twice
-- 🌍 **Flat Earth Medieval** - People in medieval times thought the Earth was flat
 - 🧠 **10% Brain Usage** - You only use 10% of your brain
-- 🔥 **Flame Colors** - Different colored flames are always hotter or cooler
-- 💀 **Hair Growth After Death** - Hair and fingernails continue growing after death
-- 🏛️ **Great Wall Visibility** - You can see the Great Wall of China from space
-- 👑 **Napoleon's Height** - Napoleon was unusually short for his time
-- 🍎 **Food Guide Pyramid** - The Food Pyramid shows the healthiest way to eat
+- 🌍 **Flat Earth Medieval** - People in medieval times thought the Earth was flat
 - 🌊 **Four Oceans** - There are four named oceans on Earth
+- 🍎 **Food Pyramid** - The Food Guide Pyramid shows the healthiest way to eat
 
-## Technical Implementation
-
-### Data Structure
-Each myth includes:
-```javascript
-{
-  id: 1,
-  category: "Biology",
-  myth: "Different parts of your tongue taste different flavors",
-  fact: "Taste buds are distributed all over your tongue...",
-  details: "The 'tongue map' was based on a mistranslation...",
-  taughtDuring: { start: 1950, end: 2005 },
-  references: [
-    {
-      title: "Taste Maps",
-      source: "Scientific American",
-      url: "https://www.scientificamerican.com/..."
-    }
-  ]
-}
-```
+*...and more across Biology, Physics, History, Geography, and Astronomy*
 
 ## Development
 
@@ -93,21 +64,6 @@ The app is automatically deployed to GitHub Pages:
 npm run build
 npx gh-pages -d dist
 ```
-
-## GitHub Actions & CI/CD
-
-### Claude Code Integration
-The repository includes GitHub Actions integration with Claude Code for automated PR reviews:
-
-- **Triggers**: Comment `@claude` on issues or PRs
-- **Capabilities**: Code review, suggestions, and analysis
-- **Configuration**: `.github/workflows/claude.yml`
-
-### Dependabot
-Automated dependency updates configured for the npm project:
-- **Schedule**: Weekly updates
-- **Scope**: `school-myths-app/` directory
-- **Configuration**: `.github/dependabot.yml`
 
 ## Contributing
 
