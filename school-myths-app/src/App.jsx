@@ -125,6 +125,19 @@ function App() {
           />
         ))}
       </main>
+
+      <footer className="app-footer">
+        <p>
+          Found an issue or want to suggest a new myth?{' '}
+          <a
+            href="https://github.com/rpherbig/school-myths"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit our GitHub repository
+          </a>
+        </p>
+      </footer>
     </div>
   )
 }
