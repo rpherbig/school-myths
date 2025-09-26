@@ -47,7 +47,7 @@ jobs:
 
           # Configure Claude's behavior with CLI arguments
           claude_args: |
-            --allowedTools "Bash(npm install),Bash(npm run *),Bash(git *),Bash(gh pr create*),Bash(gh pr *),Bash(ls),Bash(cd *)"
+            --allowedTools "Bash(*)"
 
           # Optional: Advanced settings configuration
           # settings: |
