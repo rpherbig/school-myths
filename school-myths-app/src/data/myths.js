@@ -218,6 +218,26 @@ export const myths = [
         url: "https://www.archives.gov/education/lessons/rosa-parks"
       }
     ]
+  },
+  {
+    id: 12,
+    category: "Biology",
+    myth: "Lemmings commit mass suicide by jumping off cliffs",
+    fact: "Lemmings do not commit suicide. This myth was created by a fraudulent 1958 Disney documentary that pushed lemmings off cliffs for dramatic effect.",
+    details: "The lemming suicide myth originated from Disney's 'White Wilderness' documentary, where filmmakers deliberately pushed dozens of lemmings off a cliff while filming. In reality, lemmings migrate when populations grow too large, and some may accidentally drown while swimming across water obstacles during dispersal. Their behavior is mass migration, not suicide. The myth persists as a metaphor for blindly following crowds toward disaster.",
+    taughtDuring: { start: 1958, end: 2000 }, // From Disney film through nature education
+    references: [
+      {
+        title: "Do Lemmings Really Commit Mass Suicide?",
+        source: "Britannica",
+        url: "https://www.britannica.com/story/do-lemmings-really-commit-mass-suicide"
+      },
+      {
+        title: "Lemming Suicide Myth",
+        source: "Alaska Department of Fish and Game",
+        url: "https://www.adfg.alaska.gov/index.cfm?adfg=wildlifenews.view_article&articles_id=56"
+      }
+    ]
   }
 ];
 

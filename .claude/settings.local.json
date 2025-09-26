@@ -9,7 +9,9 @@
       "WebFetch(domain:www.thehenryford.org)",
       "WebFetch(domain:www.nps.gov)",
       "WebFetch(domain:www.archives.gov)",
-      "WebFetch(domain:www.biography.com)"
+      "WebFetch(domain:www.biography.com)",
+      "WebFetch(domain:www.britannica.com)",
+      "WebFetch(domain:www.adfg.alaska.gov)"
     ],
     "deny": [],
     "ask": []
