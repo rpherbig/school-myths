@@ -15,7 +15,12 @@
       "WebFetch(domain:www.usgs.gov)",
       "WebFetch(domain:www.bostonteapartyship.com)",
       "WebFetch(domain:www.scientificamerican.com)",
-      "WebFetch(domain:www.apa.org)"
+      "WebFetch(domain:www.apa.org)",
+      "WebFetch(domain:learn.genetics.utah.edu)",
+      "WebFetch(domain:www.sciencefocus.com)",
+      "WebFetch(domain:www.press.jhu.edu)",
+      "WebFetch(domain:books.google.tt)",
+      "WebFetch(domain:pubmed.ncbi.nlm.nih.gov)"
     ],
     "deny": [],
     "ask": []

@@ -258,6 +258,26 @@ export const myths = [
         url: "https://www.apa.org/news/press/releases/2019/05/learning-styles-myth"
       }
     ]
+  },
+  {
+    id: 14,
+    category: "Biology",
+    myth: "Humans only have five senses",
+    fact: "Humans have more than five senses, with scientists identifying 9 or more distinct sensory systems.",
+    details: "The traditional 'five senses' model taught in schools oversimplifies human sensory perception. Beyond sight, hearing, taste, smell, and touch, humans have additional senses including proprioception (body position awareness), balance (vestibular sense), temperature detection, and pain sensation. Some researchers argue for even more, identifying up to 20 different sensory systems based on distinct receptor types and neural pathways.",
+    taughtDuring: { start: 1930, end: 2020 }, // Traditional elementary education
+    references: [
+      {
+        title: "How many senses do we have?",
+        source: "Johns Hopkins University Press",
+        url: "https://www.press.jhu.edu/newsroom/how-many-senses-do-we-have"
+      },
+      {
+        title: "The Twenty senses",
+        source: "University of Utah Genetics",
+        url: "https://learn.genetics.utah.edu/content/senses/twentysenses/"
+      }
+    ]
   }
 ];
 
