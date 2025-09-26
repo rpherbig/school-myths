@@ -24,7 +24,10 @@
       "WebFetch(domain:www.salem.org)",
       "WebFetch(domain:historyofmassachusetts.org)",
       "WebFetch(domain:www.history.com)",
-      "WebFetch(domain:www.etamu.edu)"
+      "WebFetch(domain:www.etamu.edu)",
+      "WebFetch(domain:genetic.org)",
+      "WebFetch(domain:scienceline.org)",
+      "WebFetch(domain:www.asrm.org)"
     ],
     "deny": [],
     "ask": []

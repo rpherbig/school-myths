@@ -298,6 +298,26 @@ export const myths = [
         url: "https://www.etamu.edu/tamuc-history-professor-busts-myths-about-the-salem-witch-trials/"
       }
     ]
+  },
+  {
+    id: 16,
+    category: "Biology",
+    myth: "Humans only have XX or XY chromosomes",
+    fact: "While XX and XY are most common, many other chromosome combinations exist naturally, affecting about 1 in 1,500-2,000 births.",
+    details: "Chromosome variations include XXY (Klinefelter syndrome), XYY, XXX, Turner syndrome (45,X), and rarer combinations like XXXY or XXXXY. These occur naturally during cell formation and represent normal human genetic diversity. About 20% of people with chromosome variations also have mosaicism, where different cells have different chromosome patterns. Sex determination involves complex genetic, hormonal, and developmental factors beyond just chromosomes.",
+    taughtDuring: { start: 1960, end: 2020 }, // Traditional biology education
+    references: [
+      {
+        title: "Beyond XX and XY: The Extraordinary Complexity of Sex Determination",
+        source: "Scientific American",
+        url: "https://www.scientificamerican.com/article/beyond-xx-and-xy-the-extraordinary-complexity-of-sex-determination/"
+      },
+      {
+        title: "Just the Facts: Biological Sex",
+        source: "American Society for Reproductive Medicine",
+        url: "https://www.asrm.org/advocacy-and-policy/fact-sheets-and-one-pagers/just-the-facts-biological-sex/"
+      }
+    ]
   }
 ];
 
