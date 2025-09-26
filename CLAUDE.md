@@ -46,11 +46,6 @@ school-myths-app/
 - Use semantic HTML and accessibility features
 - Test all changes with `npm run dev`
 
-### GitHub Actions Limitations
-- Use `./scripts/create-pr.sh "title" "body"` for PR creation
-- Avoid complex shell patterns (heredocs blocked by security)
-- All bash commands must be pre-approved in workflow
-
 ## Deployment
 - Automatic deployment to GitHub Pages via `npm run deploy`
 - Base path configured for `/school-myths/` subdirectory
