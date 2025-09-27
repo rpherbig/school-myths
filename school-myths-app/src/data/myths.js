@@ -68,14 +68,19 @@ export const myths = [
     taughtDuring: { start: 1970, end: 2000 }, // Popular in self-help era and some psychology texts
     references: [
       {
-        title: "Do People Only Use 10 Percent of Their Brains?",
-        source: "Scientific American",
-        url: "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/"
+        title: "Ten-percent-of-the-brain myth",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth"
       },
       {
-        title: "Neuroimaging and the 'Ten Percent Myth'",
-        source: "NeuroImage",
-        url: "https://www.sciencedirect.com/science/article/abs/pii/S1053811920304821"
+        title: "Do we use only 10 percent of our brain?",
+        source: "MIT McGovern Institute",
+        url: "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/"
+      },
+      {
+        title: "You don't say: Brain space",
+        source: "Harvard Health",
+        url: "https://www.health.harvard.edu/mind-and-mood/you-dont-say-brain-space"
       }
     ]
   },

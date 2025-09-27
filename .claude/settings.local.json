@@ -31,7 +31,11 @@
       "WebFetch(domain:www.mountvernon.org)",
       "WebFetch(domain:www.smithsonianmag.com)",
       "WebFetch(domain:www.granburydentalcenter.com)",
-      "WebFetch(domain:www.dakotadental.com)"
+      "WebFetch(domain:www.dakotadental.com)",
+      "WebFetch(domain:mcgovern.mit.edu)",
+      "WebFetch(domain:www.psychologicalscience.org)",
+      "WebFetch(domain:www.health.harvard.edu)",
+      "Bash(npm run validate-urls:*)"
     ],
     "deny": [],
     "ask": []
