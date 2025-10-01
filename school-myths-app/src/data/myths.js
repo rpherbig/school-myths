@@ -363,6 +363,26 @@ export const myths = [
         url: "https://www.nationalforests.org/blog/do-bears-really-hibernate"
       }
     ]
+  },
+  {
+    id: 19,
+    category: "Biology",
+    myth: "Cracking your knuckles causes arthritis",
+    fact: "There is no scientific evidence that knuckle cracking causes arthritis or any long-term joint damage.",
+    details: "The popping sound comes from gas bubbles bursting in the synovial fluid that lubricates joints, not from bone damage. Multiple studies, including a 2011 study published in the Journal of the American Board of Family Medicine, found no connection between knuckle cracking and arthritis. Dr. Donald Unger even cracked the knuckles of only his left hand for 60 years and found no difference in arthritis between his hands, earning him an Ig Nobel Prize in 2009.",
+    taughtDuring: { start: 1950, end: 2020 }, // Common health advice given by parents and teachers
+    references: [
+      {
+        title: "Knuckle Cracking Q&A",
+        source: "Johns Hopkins Arthritis Center",
+        url: "https://www.hopkinsarthritis.org/arthritis-news/knuckle-cracking-q-a-from/"
+      },
+      {
+        title: "Does cracking knuckles cause arthritis?",
+        source: "Harvard Health Publishing",
+        url: "https://www.health.harvard.edu/pain/does-cracking-knuckles-cause-arthritis"
+      }
+    ]
   }
 ];
 
