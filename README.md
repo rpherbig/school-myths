@@ -76,7 +76,6 @@ npx gh-pages -d dist
 4. Validate URLs: `npm run validate-urls`
 5. Test locally: `npm run dev`
 6. Create a pull request
-7. Tag `@claude` for automated review
 
 **See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on URL verification and source standards.**
 

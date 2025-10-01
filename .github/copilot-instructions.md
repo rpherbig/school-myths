@@ -1,4 +1,4 @@
-# School Myths Debunked - Claude Code Setup
+# School Myths Debunked - GitHub Copilot Instructions
 
 ## Project Overview
 A React web app that debunks common myths taught in schools, with personalized filtering based on birth year.
@@ -53,3 +53,9 @@ school-myths-app/
 
 ## Contributing Guidelines
 See `CONTRIBUTING.md` for detailed URL verification requirements and myth addition standards.
+
+## GitHub Copilot Specific Notes
+- When suggesting code changes, always validate URLs before adding references
+- Prefer minimal changes to existing working code
+- Run tests and linting before committing changes
+- Follow the existing code style and patterns in the repository

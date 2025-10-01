@@ -137,18 +137,20 @@ npm run build
 
 ### Automated Checks:
 
-When possible, use the WebFetch tool to verify URLs:
+Run the URL validation script to verify all URLs:
 
 ```bash
-WebFetch(url="your-url-here", prompt="verify this URL works and contains relevant content")
+npm run validate-urls
 ```
 
-### Claude Code PR Reviews:
+This will check that all reference URLs are accessible and return valid responses.
 
-Tag `@claude` on PRs for automated review. Claude Code will check:
-- Code syntax and structure
-- Basic fact-checking against sources
-- Adherence to data structure standards
+### GitHub Copilot PR Reviews:
+
+GitHub Copilot can assist with PR reviews by:
+- Checking code syntax and structure
+- Validating data structure standards
+- Suggesting improvements and best practices
 
 ## Why This Matters
 
