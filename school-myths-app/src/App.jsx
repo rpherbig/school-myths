@@ -54,6 +54,21 @@ function App() {
         <p>Separating fact from fiction in things we learned in school</p>
       </header>
 
+      <div className="myth-count-banner">
+        <p>
+          <strong>{myths.length} myths</strong> debunked and counting! 
+          Know a myth we should add?{' '}
+          <a 
+            href="https://github.com/rpherbig/school-myths" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="contribute-link"
+          >
+            Contribute on GitHub
+          </a>
+        </p>
+      </div>
+
       <div className="birth-year-selector">
         <label htmlFor="birth-year">
           When were you born? <span className="optional">(optional)</span>
