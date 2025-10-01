@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { myths, categories } from './data/myths'
 import MythCard from './components/MythCard'
 import './App.css'
@@ -7,6 +7,28 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState('All')
   const [birthYear, setBirthYear] = useState(null)
   const [showPersonalOnly, setShowPersonalOnly] = useState(false)
+  const [theme, setTheme] = useState(() => {
+    // Load theme from localStorage or default to 'system'
+    return localStorage.getItem('theme') || 'system'
+  })
+
+  // Apply theme to document root
+  useEffect(() => {
+    const root = document.documentElement
+    
+    // Remove existing theme classes
+    root.classList.remove('light-theme', 'dark-theme')
+    
+    if (theme === 'light') {
+      root.classList.add('light-theme')
+    } else if (theme === 'dark') {
+      root.classList.add('dark-theme')
+    }
+    // If theme is 'system', no class is added (uses media query)
+    
+    // Save to localStorage
+    localStorage.setItem('theme', theme)
+  }, [theme])
 
   // Calculate school years (ages 5-18)
   const getSchoolYears = (birthYear) => {
@@ -50,6 +72,29 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
+        <div className="theme-toggle">
+          <button
+            className={`theme-btn ${theme === 'light' ? 'active' : ''}`}
+            onClick={() => setTheme('light')}
+            title="Light mode"
+          >
+            ☀️
+          </button>
+          <button
+            className={`theme-btn ${theme === 'system' ? 'active' : ''}`}
+            onClick={() => setTheme('system')}
+            title="System preference"
+          >
+            💻
+          </button>
+          <button
+            className={`theme-btn ${theme === 'dark' ? 'active' : ''}`}
+            onClick={() => setTheme('dark')}
+            title="Dark mode"
+          >
+            🌙
+          </button>
+        </div>
         <h1>School Myths Debunked</h1>
         <p>Separating fact from fiction in things we learned in school</p>
       </header>

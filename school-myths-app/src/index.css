@@ -64,3 +64,27 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Light theme class override */
+.light-theme {
+  color: #213547;
+  background-color: #ffffff;
+}
+
+.light-theme a:hover {
+  color: #747bff;
+}
+
+.light-theme button {
+  background-color: #f9f9f9;
+}
+
+/* Dark theme class override */
+.dark-theme {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+.dark-theme button {
+  background-color: #1a1a1a;
+}
