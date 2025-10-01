@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function MythCard({ myth, isPersonal, schoolYears }) {
+function MythCard({ myth, isPersonal }) {
   const [showDetails, setShowDetails] = useState(false)
 
   return (
