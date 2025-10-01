@@ -62,7 +62,7 @@
   padding: 0.75rem 1rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-radius: 8px;
-  border-left: 4px solid #007bff;
+  border-left: 4px solid #7E6BA3;
 }
 
 .myth-count-banner p {
@@ -72,20 +72,20 @@
 }
 
 .myth-count-banner strong {
-  color: #007bff;
+  color: #7E6BA3;
   font-size: 1.05rem;
 }
 
 .contribute-link {
-  color: #007bff;
+  color: #7E6BA3;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
-  border-bottom: 1px dashed #007bff;
+  border-bottom: 1px dashed #7E6BA3;
 }
 
 .contribute-link:hover {
-  color: #0056b3;
+  color: #5E4D7E;
   border-bottom-style: solid;
 }
 
@@ -105,7 +105,7 @@
 
 .light-theme .myth-count-banner {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border-left-color: #007bff;
+  border-left-color: #7E6BA3;
 }
 
 .light-theme .myth-count-banner p {
@@ -113,17 +113,17 @@
 }
 
 .light-theme .myth-count-banner strong {
-  color: #007bff;
+  color: #7E6BA3;
 }
 
 .light-theme .contribute-link {
-  color: #007bff;
-  border-bottom-color: #007bff;
+  color: #7E6BA3;
+  border-bottom-color: #7E6BA3;
 }
 
 .light-theme .contribute-link:hover {
-  color: #0056b3;
-  border-bottom-color: #0056b3;
+  color: #5E4D7E;
+  border-bottom-color: #5E4D7E;
 }
 
 .light-theme .theme-toggle {
@@ -158,7 +158,7 @@
 }
 
 .light-theme .birth-year-select:focus {
-  border-color: #007bff;
+  border-color: #7E6BA3;
 }
 
 .light-theme .school-years-info {
@@ -226,11 +226,11 @@
 }
 
 .light-theme .reference-link {
-  color: #2b6cb0;
+  color: #5E4D7E;
 }
 
 .light-theme .reference-link:hover {
-  color: #1a365d;
+  color: #3B2F5C;
 }
 
 .light-theme .reference-source {
@@ -246,11 +246,11 @@
 }
 
 .light-theme .github-link {
-  color: #007bff;
+  color: #7E6BA3;
 }
 
 .light-theme .github-link:hover {
-  color: #0056b3;
+  color: #5E4D7E;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -269,7 +269,7 @@
 
   .myth-count-banner {
     background: linear-gradient(135deg, #2a2a2a 0%, #333333 100%);
-    border-left-color: #63b3ed;
+    border-left-color: #BCA9E1;
   }
 
   .myth-count-banner p {
@@ -277,17 +277,17 @@
   }
 
   .myth-count-banner strong {
-    color: #63b3ed;
+    color: #BCA9E1;
   }
 
   .contribute-link {
-    color: #63b3ed;
-    border-bottom-color: #63b3ed;
+    color: #BCA9E1;
+    border-bottom-color: #BCA9E1;
   }
 
   .contribute-link:hover {
-    color: #90cdf4;
-    border-bottom-color: #90cdf4;
+    color: #D4C5F0;
+    border-bottom-color: #D4C5F0;
   }
 }
 
@@ -307,7 +307,7 @@
 
 .dark-theme .myth-count-banner {
   background: linear-gradient(135deg, #2a2a2a 0%, #333333 100%);
-  border-left-color: #63b3ed;
+  border-left-color: #BCA9E1;
 }
 
 .dark-theme .myth-count-banner p {
@@ -315,17 +315,17 @@
 }
 
 .dark-theme .myth-count-banner strong {
-  color: #63b3ed;
+  color: #BCA9E1;
 }
 
 .dark-theme .contribute-link {
-  color: #63b3ed;
-  border-bottom-color: #63b3ed;
+  color: #BCA9E1;
+  border-bottom-color: #BCA9E1;
 }
 
 .dark-theme .contribute-link:hover {
-  color: #90cdf4;
-  border-bottom-color: #90cdf4;
+  color: #D4C5F0;
+  border-bottom-color: #D4C5F0;
 }
 
 .dark-theme .theme-toggle {
@@ -374,7 +374,7 @@
 
 .birth-year-select:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #7E6BA3;
 }
 
 .school-years-info {
@@ -443,13 +443,13 @@
 }
 
 .category-btn:hover {
-  border-color: #007bff;
-  color: #007bff;
+  border-color: #7E6BA3;
+  color: #7E6BA3;
 }
 
 .category-btn.active {
-  background: #007bff;
-  border-color: #007bff;
+  background: #7E6BA3;
+  border-color: #7E6BA3;
   color: white;
 }
 
@@ -480,7 +480,7 @@
 }
 
 .category-badge {
-  background: #007bff;
+  background: #7E6BA3;
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
@@ -575,14 +575,14 @@
 }
 
 .reference-link {
-  color: #2b6cb0;
+  color: #5E4D7E;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .reference-link:hover {
-  color: #1a365d;
+  color: #3B2F5C;
   text-decoration: underline;
 }
 
@@ -595,7 +595,7 @@
 .details-toggle {
   width: 100%;
   padding: 1rem;
-  background: #007bff;
+  background: #7E6BA3;
   color: white;
   border: none;
   cursor: pointer;
@@ -604,7 +604,7 @@
 }
 
 .details-toggle:hover {
-  background: #0056b3;
+  background: #5E4D7E;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -628,7 +628,7 @@
   }
 
   .birth-year-select:focus {
-    border-color: #007bff;
+    border-color: #BCA9E1;
   }
 
   .school-years-info {
@@ -696,11 +696,11 @@
   }
 
   .reference-link {
-    color: #63b3ed;
+    color: #BCA9E1;
   }
 
   .reference-link:hover {
-    color: #90cdf4;
+    color: #D4C5F0;
   }
 
   .reference-source {
@@ -729,7 +729,7 @@
 }
 
 .dark-theme .birth-year-select:focus {
-  border-color: #007bff;
+  border-color: #BCA9E1;
 }
 
 .dark-theme .school-years-info {
@@ -797,11 +797,11 @@
 }
 
 .dark-theme .reference-link {
-  color: #63b3ed;
+  color: #BCA9E1;
 }
 
 .dark-theme .reference-link:hover {
-  color: #90cdf4;
+  color: #D4C5F0;
 }
 
 .dark-theme .reference-source {
@@ -856,14 +856,14 @@
 }
 
 .github-link {
-  color: #007bff;
+  color: #7E6BA3;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .github-link:hover {
-  color: #0056b3;
+  color: #5E4D7E;
   text-decoration: underline;
 }
 
@@ -877,11 +877,11 @@
   }
 
   .github-link {
-    color: #63b3ed;
+    color: #BCA9E1;
   }
 
   .github-link:hover {
-    color: #90cdf4;
+    color: #D4C5F0;
   }
 }
 
@@ -894,9 +894,9 @@
 }
 
 .dark-theme .github-link {
-  color: #63b3ed;
+  color: #BCA9E1;
 }
 
 .dark-theme .github-link:hover {
-  color: #90cdf4;
+  color: #D4C5F0;
 }
