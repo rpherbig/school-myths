@@ -128,6 +128,6 @@ async function validateAllUrls() {
 }
 
 // Only run if called directly
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (import.meta.url === `file://${process.argv[1]}` || import.meta.url.endsWith('validate-urls.js')) {
   validateAllUrls().catch(console.error);
 }

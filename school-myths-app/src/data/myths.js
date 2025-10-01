@@ -8,9 +8,9 @@ export const myths = [
     taughtDuring: { start: 1950, end: 2005 }, // Peak teaching period in most curricula
     references: [
       {
-        title: "Taste Maps",
-        source: "Scientific American",
-        url: "https://www.scientificamerican.com/article/the-taste-map-all-wrong/"
+        title: "The Tongue Map",
+        source: "BrainFacts.org",
+        url: "https://www.brainfacts.org/thinking-sensing-and-behaving/taste/2012/the-tongue-map"
       },
       {
         title: "The neurobiological basis of taste",
@@ -28,14 +28,14 @@ export const myths = [
     taughtDuring: { start: 1960, end: 2010 }, // Common folk wisdom taught broadly
     references: [
       {
-        title: "Lightning Myths and Facts",
-        source: "National Weather Service",
-        url: "https://www.weather.gov/safety/lightning-myths"
+        title: "Can lightning strike the same place twice?",
+        source: "NOAA Ocean Service",
+        url: "https://oceanservice.noaa.gov/facts/lightning.html"
       },
       {
-        title: "Empire State Building Lightning Rod",
-        source: "TimeandDate.com",
-        url: "https://www.timeanddate.com/news/astronomy/empire-state-building-lightning-rod"
+        title: "Facts & Figures",
+        source: "Empire State Building",
+        url: "https://www.esbnyc.com/about/facts-figures"
       }
     ]
   },
@@ -48,14 +48,14 @@ export const myths = [
     taughtDuring: { start: 1940, end: 1990 }, // Traditional textbook narrative, mostly corrected by 1990s
     references: [
       {
-        title: "The Myth of the Flat Earth",
-        source: "History Today",
-        url: "https://www.historytoday.com/archive/myth-flat-earth"
+        title: "Christopher Columbus Never Set Out to Prove the Earth Was Round",
+        source: "History.com",
+        url: "https://www.history.com/news/christopher-columbus-never-set-out-to-prove-the-earth-was-round"
       },
       {
-        title: "Inventing the Flat Earth",
-        source: "Praeger Publishers",
-        url: "https://books.google.com/books?id=DdS6n3kBb0MC"
+        title: "The myth of the flat Earth",
+        source: "UNESCO Courier",
+        url: "https://en.unesco.org/courier/2019-4/myth-flat-earth"
       }
     ]
   },
@@ -113,9 +113,9 @@ export const myths = [
     taughtDuring: { start: 1970, end: 2010 }, // Common in biology classes and popular culture
     references: [
       {
-        title: "Do Hair and Nails Continue to Grow After Death?",
-        source: "Live Science",
-        url: "https://www.livescience.com/32014-do-hair-and-nails-keep-growing-after-death.html"
+        title: "Do fingernails and hair really keep growing after death?",
+        source: "BBC Science Focus",
+        url: "https://www.sciencefocus.com/the-human-body/do-fingernails-and-hair-really-keep-growing-after-death"
       },
       {
         title: "Forensic Pathology Reviews",
@@ -138,9 +138,9 @@ export const myths = [
         url: "https://www.nasa.gov/vision/space/workinginspace/great_wall.html"
       },
       {
-        title: "Astronaut Chris Hadfield debunks Great Wall myth",
-        source: "BBC News",
-        url: "https://www.bbc.com/news/world-22003586"
+        title: "Great Wall of China",
+        source: "National Geographic Education",
+        url: "https://education.nationalgeographic.org/resource/great-wall-china/"
       }
     ]
   },
@@ -153,14 +153,14 @@ export const myths = [
     taughtDuring: { start: 1920, end: 2000 }, // Long-standing historical misconception
     references: [
       {
-        title: "Napoleon's Height: The Long and Short of It",
-        source: "History Today",
-        url: "https://www.historytoday.com/history-matters/napoleons-height-long-and-short-it"
+        title: "Napoleon Complex: Was Napoleon Bonaparte Really Short?",
+        source: "History.com",
+        url: "https://www.history.com/news/napoleon-complex-short"
       },
       {
-        title: "The Height of Napoleon",
-        source: "Smithsonian Magazine",
-        url: "https://www.smithsonianmag.com/history/napoleon-complex-105391946/"
+        title: "Was Napoleon Short?",
+        source: "Britannica",
+        url: "https://www.britannica.com/story/was-napoleon-short"
       }
     ]
   },
@@ -173,14 +173,14 @@ export const myths = [
     taughtDuring: { start: 1992, end: 2011 }, // Official USDA guidance period
     references: [
       {
-        title: "Food Pyramid (Nutrition)",
-        source: "Wikipedia",
-        url: "https://en.wikipedia.org/wiki/Food_pyramid_(nutrition)"
+        title: "Healthy Eating Plate vs. USDA's MyPlate",
+        source: "Harvard T.H. Chan School of Public Health",
+        url: "https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate-vs-usda-myplate/"
       },
       {
-        title: "MyPlate Replaces the Food Pyramid",
-        source: "USDA",
-        url: "https://www.usda.gov/media/blog/2011/06/02/myplate-replaces-food-pyramid"
+        title: "A Brief History of USDA Food Guides",
+        source: "National Institutes of Health",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK218735/"
       }
     ]
   },
@@ -318,9 +318,9 @@ export const myths = [
         url: "https://www.scientificamerican.com/article/beyond-xx-and-xy-the-extraordinary-complexity-of-sex-determination/"
       },
       {
-        title: "Just the Facts: Biological Sex",
-        source: "American Society for Reproductive Medicine",
-        url: "https://www.asrm.org/advocacy-and-policy/fact-sheets-and-one-pagers/just-the-facts-biological-sex/"
+        title: "Chromosomes Fact Sheet",
+        source: "National Human Genome Research Institute",
+        url: "https://www.genome.gov/about-genomics/fact-sheets/Chromosomes-Fact-Sheet"
       }
     ]
   },
