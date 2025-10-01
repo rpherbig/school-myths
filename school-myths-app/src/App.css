@@ -161,14 +161,8 @@
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   border: 1px solid #e9ecef;
-}
-
-.myth-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .myth-header {
@@ -206,10 +200,6 @@
 .personal-myth {
   border: 2px solid #28a745;
   box-shadow: 0 4px 6px rgba(40, 167, 69, 0.15);
-}
-
-.personal-myth:hover {
-  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.25);
 }
 
 .myth-content {
@@ -367,18 +357,10 @@
     box-shadow: 0 4px 6px rgba(74, 222, 128, 0.15);
   }
 
-  .personal-myth:hover {
-    box-shadow: 0 8px 25px rgba(74, 222, 128, 0.25);
-  }
-
   .myth-card {
     background: #2a2a2a;
     border-color: #404040;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
-
-  .myth-card:hover {
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   }
 
   .myth-header {
