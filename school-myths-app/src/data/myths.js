@@ -383,6 +383,26 @@ export const myths = [
         url: "https://www.health.harvard.edu/pain/does-cracking-knuckles-cause-arthritis"
       }
     ]
+  },
+  {
+    id: 20,
+    category: "Biology",
+    myth: "Touching a baby animal will cause its parents to abandon it because of human scent",
+    fact: "Most wild animals have a poor sense of smell and will not abandon their young if touched by humans.",
+    details: "This myth persists as well-intentioned advice to prevent people from interfering with wildlife, but it's not based on animal behavior. Most birds have a limited sense of smell and won't detect human scent. Mammals like deer and rabbits are primarily concerned with the physical presence of predators, not lingering scents. However, it's still best not to handle wild animals - not because parents will reject them, but because human interference can genuinely stress the animals or separate young from parents who are temporarily away gathering food.",
+    taughtDuring: { start: 1960, end: 2020 }, // Common wildlife advice given by parents and educators
+    references: [
+      {
+        title: "Fact or Fiction: Birds Abandon Young at Human Touch?",
+        source: "Scientific American",
+        url: "https://www.scientificamerican.com/article/fact-or-fiction-birds-abandon-young-at-human-touch/"
+      },
+      {
+        title: "If I touch a baby bird, will its parents reject it?",
+        source: "Alaska Department of Fish and Game",
+        url: "https://www.adfg.alaska.gov/index.cfm?adfg=wildlifenews.view_article&articles_id=426"
+      }
+    ]
   }
 ];
 
