@@ -9,6 +9,40 @@
 .app-header {
   text-align: center;
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 0.25rem;
+  background: #f0f0f0;
+  padding: 0.25rem;
+  border-radius: 20px;
+}
+
+.theme-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+}
+
+.theme-btn:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.theme-btn.active {
+  opacity: 1;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .app-header h1 {
@@ -55,6 +89,170 @@
   border-bottom-style: solid;
 }
 
+/* Light theme overrides (forces light mode even when system prefers dark) */
+.light-theme .app {
+  background-color: transparent;
+  color: inherit;
+}
+
+.light-theme .app-header h1 {
+  color: #333;
+}
+
+.light-theme .app-header p {
+  color: #666;
+}
+
+.light-theme .myth-count-banner {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-left-color: #007bff;
+}
+
+.light-theme .myth-count-banner p {
+  color: #495057;
+}
+
+.light-theme .myth-count-banner strong {
+  color: #007bff;
+}
+
+.light-theme .contribute-link {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+.light-theme .contribute-link:hover {
+  color: #0056b3;
+  border-bottom-color: #0056b3;
+}
+
+.light-theme .theme-toggle {
+  background: #f0f0f0;
+}
+
+.light-theme .theme-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.light-theme .theme-btn.active {
+  background: white;
+}
+
+.light-theme .birth-year-selector {
+  background: #f8f9fa;
+  border-color: #dee2e6;
+}
+
+.light-theme .birth-year-selector label {
+  color: #495057;
+}
+
+.light-theme .optional {
+  color: #6c757d;
+}
+
+.light-theme .birth-year-select {
+  background: white;
+  border-color: #ced4da;
+  color: inherit;
+}
+
+.light-theme .birth-year-select:focus {
+  border-color: #007bff;
+}
+
+.light-theme .school-years-info {
+  color: #28a745;
+}
+
+.light-theme .category-btn {
+  border-color: #e0e0e0;
+  background: white;
+  color: #333;
+}
+
+.light-theme .personal-toggle {
+  border-color: #28a745;
+  color: #28a745;
+  background: rgba(40, 167, 69, 0.05);
+}
+
+.light-theme .personal-toggle:hover {
+  background: rgba(40, 167, 69, 0.1);
+}
+
+.light-theme .personal-toggle input[type="checkbox"] {
+  accent-color: #28a745;
+}
+
+.light-theme .personal-myth {
+  border-color: #28a745;
+  box-shadow: 0 4px 6px rgba(40, 167, 69, 0.15);
+}
+
+.light-theme .myth-card {
+  background: white;
+  border-color: #e9ecef;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .myth-header {
+  background: #f8f9fa;
+  border-bottom-color: #e9ecef;
+}
+
+.light-theme .myth-section h4 {
+  color: #495057;
+}
+
+.light-theme .myth-section p {
+  color: #555;
+}
+
+.light-theme .myth-false {
+  background: #fff5f5;
+}
+
+.light-theme .myth-true {
+  background: #f0fff4;
+}
+
+.light-theme .myth-details {
+  background: #f7fafc;
+}
+
+.light-theme .myth-references {
+  background: #fefcf7;
+}
+
+.light-theme .reference-link {
+  color: #2b6cb0;
+}
+
+.light-theme .reference-link:hover {
+  color: #1a365d;
+}
+
+.light-theme .reference-source {
+  color: #718096;
+}
+
+.light-theme .app-footer {
+  border-top-color: #e9ecef;
+}
+
+.light-theme .app-footer p {
+  color: #666;
+}
+
+.light-theme .github-link {
+  color: #007bff;
+}
+
+.light-theme .github-link:hover {
+  color: #0056b3;
+}
+
 @media (prefers-color-scheme: dark) {
   .app {
     background-color: #1a1a1a;
@@ -91,6 +289,55 @@
     color: #90cdf4;
     border-bottom-color: #90cdf4;
   }
+}
+
+/* Dark theme override */
+.dark-theme .app {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-theme .app-header h1 {
+  color: #ffffff;
+}
+
+.dark-theme .app-header p {
+  color: #cccccc;
+}
+
+.dark-theme .myth-count-banner {
+  background: linear-gradient(135deg, #2a2a2a 0%, #333333 100%);
+  border-left-color: #63b3ed;
+}
+
+.dark-theme .myth-count-banner p {
+  color: #cccccc;
+}
+
+.dark-theme .myth-count-banner strong {
+  color: #63b3ed;
+}
+
+.dark-theme .contribute-link {
+  color: #63b3ed;
+  border-bottom-color: #63b3ed;
+}
+
+.dark-theme .contribute-link:hover {
+  color: #90cdf4;
+  border-bottom-color: #90cdf4;
+}
+
+.dark-theme .theme-toggle {
+  background: #333333;
+}
+
+.dark-theme .theme-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .theme-btn.active {
+  background: #404040;
 }
 
 .birth-year-selector {
@@ -461,6 +708,106 @@
   }
 }
 
+/* Dark theme overrides for all components */
+.dark-theme .birth-year-selector {
+  background: #333333;
+  border-color: #555555;
+}
+
+.dark-theme .birth-year-selector label {
+  color: #ffffff;
+}
+
+.dark-theme .optional {
+  color: #cccccc;
+}
+
+.dark-theme .birth-year-select {
+  background: #2a2a2a;
+  border-color: #555555;
+  color: #ffffff;
+}
+
+.dark-theme .birth-year-select:focus {
+  border-color: #007bff;
+}
+
+.dark-theme .school-years-info {
+  color: #4ade80;
+}
+
+.dark-theme .category-btn {
+  border-color: #444444;
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+.dark-theme .personal-toggle {
+  border-color: #4ade80;
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.1);
+}
+
+.dark-theme .personal-toggle:hover {
+  background: rgba(74, 222, 128, 0.15);
+}
+
+.dark-theme .personal-toggle input[type="checkbox"] {
+  accent-color: #4ade80;
+}
+
+.dark-theme .personal-myth {
+  border-color: #4ade80;
+  box-shadow: 0 4px 6px rgba(74, 222, 128, 0.15);
+}
+
+.dark-theme .myth-card {
+  background: #2a2a2a;
+  border-color: #404040;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .myth-header {
+  background: #333333;
+  border-bottom-color: #404040;
+}
+
+.dark-theme .myth-section h4 {
+  color: #cccccc;
+}
+
+.dark-theme .myth-section p {
+  color: #e0e0e0;
+}
+
+.dark-theme .myth-false {
+  background: #3a2a2a;
+}
+
+.dark-theme .myth-true {
+  background: #2a3a2a;
+}
+
+.dark-theme .myth-details {
+  background: #2a2a3a;
+}
+
+.dark-theme .myth-references {
+  background: #3a3a2a;
+}
+
+.dark-theme .reference-link {
+  color: #63b3ed;
+}
+
+.dark-theme .reference-link:hover {
+  color: #90cdf4;
+}
+
+.dark-theme .reference-source {
+  color: #a0aec0;
+}
+
 @media (max-width: 768px) {
   .app {
     padding: 1rem;
@@ -472,6 +819,12 @@
 
   .app-header h1 {
     font-size: 2rem;
+  }
+
+  .theme-toggle {
+    position: static;
+    margin-bottom: 1rem;
+    justify-content: center;
   }
 
   .category-filter {
@@ -530,4 +883,20 @@
   .github-link:hover {
     color: #90cdf4;
   }
+}
+
+.dark-theme .app-footer {
+  border-top-color: #404040;
+}
+
+.dark-theme .app-footer p {
+  color: #cccccc;
+}
+
+.dark-theme .github-link {
+  color: #63b3ed;
+}
+
+.dark-theme .github-link:hover {
+  color: #90cdf4;
 }
