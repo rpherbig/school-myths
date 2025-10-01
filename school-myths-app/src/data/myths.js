@@ -343,6 +343,26 @@ export const myths = [
         url: "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/wooden-teeth-myth"
       }
     ]
+  },
+  {
+    id: 18,
+    category: "Biology",
+    myth: "Bears sleep all winter when they hibernate",
+    fact: "Bears enter torpor, not true hibernation. They can wake up and move around during winter, and their body temperature doesn't drop as dramatically as true hibernators.",
+    details: "Unlike true hibernators like ground squirrels whose body temperature drops to near-freezing, bears only experience a modest temperature drop of about 10°F. During torpor, bears can wake up if disturbed, and pregnant females wake to give birth during winter. Bears don't eat, drink, urinate, or defecate during this period, but they maintain a relatively high body temperature and can become fully alert quickly - something true hibernators cannot do.",
+    taughtDuring: { start: 1960, end: 2020 }, // Traditional wildlife education
+    references: [
+      {
+        title: "Ask A Wildlife Biologist: Do bears really hibernate?",
+        source: "Alaska Department of Fish and Game",
+        url: "https://www.adfg.alaska.gov/index.cfm?adfg=wildlifenews.view_article&articles_id=349"
+      },
+      {
+        title: "Do Bears Really Hibernate?",
+        source: "National Forest Foundation",
+        url: "https://www.nationalforests.org/blog/do-bears-really-hibernate"
+      }
+    ]
   }
 ];
 
