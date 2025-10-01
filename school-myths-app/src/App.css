@@ -22,6 +22,39 @@
   font-size: 1.1rem;
 }
 
+.myth-count-banner {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.myth-count-banner p {
+  color: #495057;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.myth-count-banner strong {
+  color: #007bff;
+  font-size: 1.05rem;
+}
+
+.contribute-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  border-bottom: 1px dashed #007bff;
+}
+
+.contribute-link:hover {
+  color: #0056b3;
+  border-bottom-style: solid;
+}
+
 @media (prefers-color-scheme: dark) {
   .app {
     background-color: #1a1a1a;
@@ -34,6 +67,29 @@
 
   .app-header p {
     color: #cccccc;
+  }
+
+  .myth-count-banner {
+    background: linear-gradient(135deg, #2a2a2a 0%, #333333 100%);
+    border-left-color: #63b3ed;
+  }
+
+  .myth-count-banner p {
+    color: #cccccc;
+  }
+
+  .myth-count-banner strong {
+    color: #63b3ed;
+  }
+
+  .contribute-link {
+    color: #63b3ed;
+    border-bottom-color: #63b3ed;
+  }
+
+  .contribute-link:hover {
+    color: #90cdf4;
+    border-bottom-color: #90cdf4;
   }
 }
 
