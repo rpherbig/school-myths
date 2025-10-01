@@ -450,3 +450,46 @@
     font-size: 0.9rem;
   }
 }
+
+.app-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  border-top: 2px solid #e9ecef;
+}
+
+.app-footer p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.github-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.github-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .app-footer {
+    border-top-color: #404040;
+  }
+
+  .app-footer p {
+    color: #cccccc;
+  }
+
+  .github-link {
+    color: #63b3ed;
+  }
+
+  .github-link:hover {
+    color: #90cdf4;
+  }
+}
