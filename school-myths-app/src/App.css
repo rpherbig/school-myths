@@ -829,6 +829,15 @@
   color: #a0aec0;
 }
 
+.dark-theme .details-toggle {
+  background: #BCA9E1;
+  color: #1a1a1a;
+}
+
+.dark-theme .details-toggle:hover {
+  background: #D4C5F0;
+}
+
 @media (max-width: 768px) {
   .app {
     padding: 1rem;
