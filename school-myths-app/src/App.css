@@ -298,6 +298,27 @@
     color: #D4C5F0;
     border-bottom-color: #D4C5F0;
   }
+
+  .theme-toggle {
+    background: #333333;
+  }
+
+  .theme-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .theme-btn.active {
+    background: #404040;
+  }
+
+  .details-toggle {
+    background: #BCA9E1;
+    color: #1a1a1a;
+  }
+
+  .details-toggle:hover {
+    background: #D4C5F0;
+  }
 }
 
 /* Dark theme override */
