@@ -253,6 +253,21 @@
   color: #5E4D7E;
 }
 
+.details-toggle {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background: #7E6BA3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.details-toggle:hover {
+  background: #5E4D7E;
+}
+
 .light-theme .details-toggle {
   background: #7E6BA3;
   color: white;
@@ -620,21 +635,6 @@
   color: #718096;
   font-size: 0.9rem;
   font-style: italic;
-}
-
-.details-toggle {
-  width: 100%;
-  padding: 0.75rem 1.5rem;
-  background: #7E6BA3;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
-.details-toggle:hover {
-  background: #5E4D7E;
 }
 
 @media (prefers-color-scheme: dark) {
