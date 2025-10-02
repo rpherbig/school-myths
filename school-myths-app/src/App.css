@@ -253,6 +253,15 @@
   color: #5E4D7E;
 }
 
+.light-theme .details-toggle {
+  background: #7E6BA3;
+  color: white;
+}
+
+.light-theme .details-toggle:hover {
+  background: #5E4D7E;
+}
+
 @media (prefers-color-scheme: dark) {
   .app {
     background-color: #1a1a1a;
