@@ -650,6 +650,12 @@
     color: #ffffff;
   }
 
+  .category-btn.active {
+    background: #BCA9E1;
+    border-color: #BCA9E1;
+    color: #1a1a1a;
+  }
+
   .personal-toggle {
     border-color: #4ade80;
     color: #4ade80;
@@ -749,6 +755,12 @@
   border-color: #444444;
   background: #2a2a2a;
   color: #ffffff;
+}
+
+.dark-theme .category-btn.active {
+  background: #BCA9E1;
+  border-color: #BCA9E1;
+  color: #1a1a1a;
 }
 
 .dark-theme .personal-toggle {
