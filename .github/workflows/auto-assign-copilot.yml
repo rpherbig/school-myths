@@ -1,0 +1,63 @@
+name: Auto-Assign Copilot to Dependabot PRs
+
+on:
+  pull_request:
+    types: [opened, reopened]
+    branches: [ main ]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  assign-copilot:
+    runs-on: ubuntu-latest
+    # Only run for Dependabot PRs
+    if: github.actor == 'dependabot[bot]'
+    
+    steps:
+      - name: Request Copilot review
+        uses: actions/github-script@v7
+        with:
+          script: |
+            try {
+              // Request review from GitHub Copilot
+              await github.rest.pulls.requestReviewers({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: context.issue.number,
+                team_reviewers: ['copilot']
+              });
+              console.log('✅ Copilot assigned as reviewer');
+              
+              // Also add a comment to trigger Copilot
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: '@github-copilot review this PR and provide suggestions for any issues'
+              });
+              console.log('✅ Copilot review comment added');
+              
+            } catch (error) {
+              console.log('⚠️ Could not assign Copilot:', error.message);
+              // If team_reviewers doesn't work, try individual reviewer
+              try {
+                await github.rest.pulls.requestReviewers({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: context.issue.number,
+                  reviewers: ['copilot[bot]']
+                });
+                console.log('✅ Copilot assigned as individual reviewer');
+              } catch (error2) {
+                console.log('⚠️ Alternative assignment failed:', error2.message);
+                // Still add the comment to trigger Copilot
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.issue.number,
+                  body: '@github-copilot review'
+                });
+                console.log('✅ Copilot review triggered via comment');
+              }
+            }
