@@ -101,7 +101,11 @@ See `CONTRIBUTING.md` for detailed URL verification requirements and myth additi
 ## GitHub Copilot Specific Notes
 - When suggesting code changes, always validate URLs before adding references
 - Prefer minimal changes to existing working code
-- Run tests and linting before committing changes
+- Run tests and linting before suggesting commits
 - Follow the existing code style and patterns in the repository
 - **Working directory**: All npm commands run from `school-myths-app/` subdirectory
 - Focus on educational accuracy - this is a learning resource, credibility matters
+- **NEVER commit changes** - only stage files and show diffs for user review
+- **NEVER push to remote** - user will review and push manually
+- Use `git add` to stage changes, then show `git status` and `git diff --staged` for user approval
+- Always explain what changes were made and why
