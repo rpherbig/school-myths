@@ -11,8 +11,8 @@ permissions:
 jobs:
   assign-copilot:
     runs-on: ubuntu-latest
-    # Only run for Dependabot PRs
-    if: github.actor == 'dependabot[bot]'
+    # Only run for Dependabot PRs (check PR author, not who triggered the event)
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
     
     steps:
       - name: Request Copilot review
