@@ -1,75 +1,71 @@
-# GitHub Copilot Auto-Assignment for PRs
+# GitHub Copilot Auto-Review for Dependabot PRs
 
 ## What This Does
 
-Automatically assigns GitHub Copilot as a reviewer on Dependabot PRs so you get AI-powered code review.
+Automatically requests GitHub Copilot to review Dependabot PRs by posting a comment.
 
-## Important Clarification
+## Important: How GitHub Copilot Reviews Work
 
-### ✅ GitHub Copilot CAN:
-- Be assigned as a PR reviewer
-- Review code and provide feedback
-- Comment with suggestions
-- Summarize PR changes
-- Identify potential issues
+### ✅ How to Trigger Copilot Reviews:
+- Comment `@github-copilot review` on any PR
+- This workflow automatically posts that comment on Dependabot PRs
 
-### ❌ GitHub Copilot CANNOT:
-- Commit code changes to the PR
-- Push fixes directly to branches
-- Modify files in the repository
-- Auto-merge PRs
+### ❌ What DOESN'T Work:
+- You **cannot** assign Copilot as a traditional reviewer
+- Copilot is **not** a user or team that can be assigned
+- The GitHub API does not support programmatic Copilot assignment
 
-**Think of it as:** Copilot reviews and suggests → You (or GitHub Actions) implement the fixes
+**This is a GitHub limitation, not a bug in our workflow.**
 
 ## How It Works
 
 1. **Dependabot creates PR** → Workflow triggers
-2. **Workflow assigns Copilot** → Adds Copilot as reviewer
+2. **Workflow posts comment** → `@github-copilot review`
 3. **Copilot reviews PR** → Provides feedback and suggestions
-4. **You read suggestions** → Copilot comments appear in PR
-5. **GitHub Actions auto-fixes** → Our auto-fix workflow handles common issues
-6. **PR auto-merges** → If everything passes
+4. **You read review** → Copilot comments appear in PR
+5. **GitHub Actions auto-fixes** → Our auto-fix workflow handles common issues (if configured)
+6. **PR auto-merges** → If everything passes (if auto-merge configured)
 
 ## Workflow Integration
 
 ```
 Dependabot PR Created
         ↓
-[1] Auto-Assign Copilot (assigns reviewer)
+[1] Workflow posts comment: @github-copilot review
         ↓
 [2] Copilot Reviews (provides suggestions)
         ↓
-[3] Auto-Fix Workflow (fixes linting/lockfile)
+[3] Auto-Fix Workflow (fixes linting/lockfile) [if configured]
         ↓
 [4] CI Runs (lint + build + validate)
         ↓
-[5] Auto-Merge (if all checks pass)
+[5] Auto-Merge (if all checks pass) [if configured]
 ```
 
 ## What You'll See
 
-After Copilot is assigned, you'll see:
-- 🤖 Copilot listed as a reviewer
-- 💬 Comments from Copilot with suggestions
+After the workflow runs, you'll see:
+- 💬 A comment from github-actions[bot]: `@github-copilot review`
+- 🤖 Copilot responds with review feedback
 - 📝 Summary of changes
 - ⚠️ Potential issues flagged
 
-Then our auto-fix workflow will:
-- 🔧 Fix any linting issues
-- 📦 Update lockfiles
-- ✅ Commit fixes to the PR
+Then (if configured):
+- 🔧 Auto-fix workflow commits fixes
+- ✅ CI validates changes
+- 🚀 Auto-merge merges the PR
 
 ## Example PR Timeline
 
 ```
 10:00 AM - Dependabot creates PR
-10:01 AM - Copilot assigned as reviewer
+10:01 AM - Workflow posts: "@github-copilot review"
 10:02 AM - Copilot reviews and comments:
            "✅ Dependencies look good"
            "ℹ️ No breaking changes detected"
-10:03 AM - Auto-fix workflow runs
+10:03 AM - Auto-fix workflow runs (if configured)
 10:04 AM - CI passes
-10:05 AM - PR auto-merges
+10:05 AM - PR auto-merges (if configured)
 ```
 
 ## Manual Override
@@ -101,14 +97,16 @@ But doesn't replace the auto-fix/merge workflows.
 
 ## Disabling This Workflow
 
-If you don't want auto-assignment, simply delete:
+If you don't want automatic Copilot reviews, simply delete or rename:
 ```
 .github/workflows/auto-assign-copilot.yml
 ```
 
+You can still manually request reviews by commenting `@github-copilot review` on any PR.
+
 ## Summary
 
-**What changed:** Copilot now automatically reviews Dependabot PRs  
-**What's the same:** Auto-fix and auto-merge still work independently  
-**Value add:** You get AI insights on dependency updates  
-**Cost:** Requires Copilot subscription  
+**What changed:** Workflow now posts `@github-copilot review` comment instead of trying to assign  
+**Why:** GitHub Copilot reviews are comment-triggered, not assignment-based  
+**Result:** Copilot will now actually review your Dependabot PRs automatically  
+**Cost:** Requires Copilot subscription
