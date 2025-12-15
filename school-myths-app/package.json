@@ -12,12 +12,12 @@
     "deploy": "npm run build && npx gh-pages -d dist"
   },
   "dependencies": {
-    "react": "^19.1.1",
+    "react": "^19.2.3",
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
-    "@types/react": "^19.2.2",
+    "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.1.2",
     "eslint": "^9.39.2",
