@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-React web app that debunks common myths taught in schools, with personalized filtering based on birth year. Deployed to GitHub Pages at `/school-myths/`. All content is static (no backend/database).
+React 18 + Vite web app that debunks common myths taught in schools, with personalized filtering based on birth year. Deployed to GitHub Pages at `/school-myths/` via `gh-pages` branch. All content is static (no backend/database). CSS handles styling with dark/light/system theme support.
 
 ## Commands
 
@@ -21,7 +21,7 @@ npm run preview          # Preview production build locally
 npm run deploy           # Build + deploy to GitHub Pages
 ```
 
-There are no unit tests. Validation is: lint + build + URL validation + manual testing via `npm run dev`.
+There are no unit tests. Validation is: lint + build + URL validation + manual testing via `npm run dev`. Also check responsive design at different screen sizes and test dark mode when making styling changes.
 
 ## Architecture
 
@@ -34,8 +34,12 @@ There are no unit tests. Validation is: lint + build + URL validation + manual t
 ## Critical Rules
 
 - **URL verification is mandatory.** Never add reference URLs without verifying they work. Run `npm run validate-urls` after any content changes. See CONTRIBUTING.md for source standards.
-- **Minimum 2 credible sources per myth.** Prefer government agencies, academic institutions, and major science publications. No paywalled or unverified URLs.
+- **Minimum 2 credible sources per myth.** Prefer government agencies, academic institutions, and major science publications. No paywalled or unverified URLs. No Wikipedia as a primary source (acceptable as secondary).
+- **Don't commit the `dist/` folder** — it's auto-generated during deploy.
 - **Don't change `base: '/school-myths/'`** in vite.config.js — it's required for GitHub Pages routing.
 - **Don't modify the myth object structure** without updating MythCard.jsx accordingly.
 - **Don't add categories** without updating the categories array export in myths.js.
+- **Don't forget `taughtDuring` dates** on new myths — they enable personal filtering.
+- **Don't use fixed widths** that break mobile responsiveness.
 - **Test both light and dark themes** when making styling changes.
+- **CI pipeline** is configured in `.github/workflows/ci.yml`.
