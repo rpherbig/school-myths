@@ -85,26 +85,6 @@ export const myths = [
     ]
   },
   {
-    id: 5,
-    category: "Physics",
-    myth: "Different colored flames are always hotter or cooler",
-    fact: "Flame color depends on the chemical composition and available oxygen, not just temperature.",
-    details: "While blue flames are often hotter than yellow ones in gas burners, adding certain chemicals can create colored flames at various temperatures. Copper creates green flames, sodium creates yellow-orange flames, regardless of temperature.",
-    taughtDuring: { start: 1980, end: 2015 }, // Simplified chemistry teaching
-    references: [
-      {
-        title: "Flame Colors: The Science Behind the Spectrum",
-        source: "Chemistry World",
-        url: "https://www.chemistryworld.com/news/flame-colours/3008091.article"
-      },
-      {
-        title: "Flame Test Colors",
-        source: "ThoughtCo",
-        url: "https://www.thoughtco.com/flame-test-colors-photo-gallery-4053133"
-      }
-    ]
-  },
-  {
     id: 6,
     category: "Biology",
     myth: "Hair and fingernails continue growing after death",
