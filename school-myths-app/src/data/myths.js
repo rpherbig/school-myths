@@ -4,7 +4,7 @@ export const myths = [
     category: "Biology",
     myth: "Different parts of your tongue taste different flavors",
     fact: "Taste buds that detect sweet, sour, salty, bitter, and umami are distributed all over your tongue, not in specific zones.",
-    details: "The 'tongue map' was based on a mistranslation of German research from 1901. While some areas may be slightly more sensitive to certain tastes, all taste buds can detect all basic flavors.",
+    details: "The 'tongue map' was based on a misinterpretation of German research from 1901. While some areas may be slightly more sensitive to certain tastes, all taste buds can detect all basic flavors.",
     taughtDuring: { start: 1950, end: 2005 }, // Peak teaching period in most curricula
     references: [
       {
@@ -189,7 +189,7 @@ export const myths = [
     category: "Geography",
     myth: "There are four named oceans on Earth",
     fact: "There are now five officially recognized oceans, including the Southern Ocean around Antarctica.",
-    details: "For decades, geography textbooks taught that Earth had four oceans: Atlantic, Pacific, Indian, and Arctic. The U.S. Board on Geographic Names proposed the Southern Ocean in 2000, defined as waters from Antarctica's coast to 60 degrees South latitude. National Geographic officially recognized it as the fifth ocean on June 8, 2021, defining it by the Antarctic Circumpolar Current. This recognition aims to draw attention to the unique ecosystem and conservation needs of Antarctic waters.",
+    details: "For decades, geography textbooks taught that Earth had four oceans: Atlantic, Pacific, Indian, and Arctic. The U.S. Board on Geographic Names recognized the Southern Ocean in 1999, defined as waters from Antarctica's coast to 60 degrees South latitude. National Geographic officially recognized it as the fifth ocean on June 8, 2021, defining it by the Antarctic Circumpolar Current. This recognition aims to draw attention to the unique ecosystem and conservation needs of Antarctic waters.",
     taughtDuring: { start: 1950, end: 2020 }, // When 4-ocean model was standard in education
     references: [
       {
@@ -308,8 +308,8 @@ export const myths = [
     id: 16,
     category: "Biology",
     myth: "Humans only have XX or XY chromosomes",
-    fact: "While XX and XY are most common, many other chromosome combinations exist naturally, affecting about 1 in 1,500-2,000 births.",
-    details: "Chromosome variations include XXY (Klinefelter syndrome), XYY, XXX, Turner syndrome (45,X), and rarer combinations like XXXY or XXXXY. These occur naturally during cell formation and represent normal human genetic diversity. About 20% of people with chromosome variations also have mosaicism, where different cells have different chromosome patterns. Sex determination involves complex genetic, hormonal, and developmental factors beyond just chromosomes.",
+    fact: "While XX and XY are most common, many other chromosome combinations exist naturally, affecting about 1 in 400 births.",
+    details: "Chromosome variations include XXY (Klinefelter syndrome), XYY, XXX, Turner syndrome (45,X), and rarer combinations like XXXY or XXXXY. These occur naturally during cell formation and represent normal human genetic diversity. Some individuals with these variations also have mosaicism, where different cells have different chromosome patterns. Sex determination involves complex genetic, hormonal, and developmental factors beyond just chromosomes.",
     taughtDuring: { start: 1960, end: 2020 }, // Traditional biology education
     references: [
       {
@@ -329,7 +329,7 @@ export const myths = [
     category: "History",
     myth: "George Washington had wooden teeth",
     fact: "George Washington's dentures were made from hippopotamus ivory, gold, brass, and human teeth - not wood.",
-    details: "This persistent myth likely arose because ivory dentures would become stained and discolored, potentially resembling wood. Washington's dentures were actually sophisticated devices made from various materials including hippopotamus ivory, elephant ivory, brass, gold, lead, and human teeth. His dentist was Dr. John Greenwood, and the dentures used metal springs and fasteners. By the time he became president, Washington had lost nearly all his natural teeth.",
+    details: "This persistent myth likely arose because ivory dentures would become stained and discolored, potentially resembling wood. Washington's dentures were actually sophisticated devices made from various materials including hippopotamus ivory, elephant ivory, brass, gold, lead, and human teeth. Washington's 1784 ledger records a payment to enslaved people for nine teeth, almost certainly intended for his dental use. His dentist was Dr. John Greenwood, and the dentures used metal springs and fasteners. By the time he became president, Washington had lost nearly all his natural teeth.",
     taughtDuring: { start: 1900, end: 2000 }, // Long-standing historical misconception
     references: [
       {
@@ -348,8 +348,8 @@ export const myths = [
     id: 18,
     category: "Biology",
     myth: "Bears sleep all winter when they hibernate",
-    fact: "Bears enter torpor, not true hibernation. They can wake up and move around during winter, and their body temperature doesn't drop as dramatically as true hibernators.",
-    details: "Unlike true hibernators like ground squirrels whose body temperature drops to near-freezing, bears only experience a modest temperature drop of about 10°F. During torpor, bears can wake up if disturbed, and pregnant females wake to give birth during winter. Bears don't eat, drink, urinate, or defecate during this period, but they maintain a relatively high body temperature and can become fully alert quickly - something true hibernators cannot do.",
+    fact: "Bears don't sleep continuously all winter. They enter a state of dormancy but can wake up and move around, and their body temperature doesn't drop as dramatically as smaller hibernators.",
+    details: "Unlike deep hibernators like ground squirrels whose body temperature drops to near-freezing, bears only experience a modest temperature drop of about 10°F. Bears can wake up if disturbed, and pregnant females wake to give birth during winter. Bears don't eat, drink, urinate, or defecate during this period, but they maintain a relatively high body temperature and can become fully alert quickly. Whether bears are 'true' hibernators is debated — some biologists now classify them as hibernators based on their active metabolic suppression, while others reserve the term for animals with more dramatic physiological changes.",
     taughtDuring: { start: 1960, end: 2020 }, // Traditional wildlife education
     references: [
       {
@@ -369,7 +369,7 @@ export const myths = [
     category: "Biology",
     myth: "Cracking your knuckles causes arthritis",
     fact: "There is no scientific evidence that knuckle cracking causes arthritis or any long-term joint damage.",
-    details: "The popping sound comes from gas bubbles bursting in the synovial fluid that lubricates joints, not from bone damage. Multiple studies, including a 2011 study published in the Journal of the American Board of Family Medicine, found no connection between knuckle cracking and arthritis. Dr. Donald Unger even cracked the knuckles of only his left hand for 60 years and found no difference in arthritis between his hands, earning him an Ig Nobel Prize in 2009.",
+    details: "The popping sound comes from gas bubbles bursting in the synovial fluid that lubricates joints, not from bone damage. Multiple studies, including a 2011 study published in the Journal of the American Board of Family Medicine, found no connection between knuckle cracking and arthritis. Dr. Donald Unger even cracked the knuckles of only his left hand for over 50 years and found no difference in arthritis between his hands, earning him an Ig Nobel Prize in 2009.",
     taughtDuring: { start: 1950, end: 2020 }, // Common health advice given by parents and teachers
     references: [
       {

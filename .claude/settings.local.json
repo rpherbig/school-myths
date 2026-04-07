@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "WebSearch",
+      "Bash(curl:*)",
+      "WebFetch(domain:www.britannica.com)",
+      "WebFetch(domain:www.smithsonianmag.com)",
+      "WebFetch(domain:americanhistory.si.edu)",
+      "WebFetch(domain:www.pbs.org)",
+      "WebFetch(domain:www.history.com)",
+      "WebFetch(domain:www.nps.gov)",
+      "WebFetch(domain:www.loc.gov)",
+      "WebFetch(domain:encyclopedia.virginialibrary.org)",
+      "WebFetch(domain:www.georgewashington.si.edu)",
+      "WebFetch(domain:encyclopediavirginia.org)",
+      "WebFetch(domain:theconversation.com)"
+    ]
+  }
+}
