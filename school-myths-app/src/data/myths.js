@@ -68,9 +68,9 @@ export const myths = [
     taughtDuring: { start: 1970, end: 2000 }, // Popular in self-help era and some psychology texts
     references: [
       {
-        title: "Ten-percent-of-the-brain myth",
-        source: "Wikipedia",
-        url: "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth"
+        title: "Do We Really Use Only 10 Percent of Our Brain?",
+        source: "Britannica",
+        url: "https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain"
       },
       {
         title: "Do we use only 10 percent of our brain?",
@@ -333,9 +333,9 @@ export const myths = [
     taughtDuring: { start: 1900, end: 2000 }, // Long-standing historical misconception
     references: [
       {
-        title: "George Washington's teeth",
-        source: "Wikipedia",
-        url: "https://en.wikipedia.org/wiki/George_Washington%27s_teeth"
+        title: "George Washington's Dentures",
+        source: "Encyclopedia Virginia",
+        url: "https://encyclopediavirginia.org/4705hpr-75409c982bf0dc2/"
       },
       {
         title: "Wooden Teeth Myth",
