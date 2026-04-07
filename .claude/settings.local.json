@@ -2,6 +2,7 @@
   "permissions": {
     "allow": [
       "Bash(npm run:*)",
+      "Bash(curl -s \"https://en.wikipedia.org/wiki/*\")",
       "WebSearch",
       "Bash(curl:*)",
       "WebFetch(domain:www.britannica.com)",
@@ -14,7 +15,11 @@
       "WebFetch(domain:encyclopedia.virginialibrary.org)",
       "WebFetch(domain:www.georgewashington.si.edu)",
       "WebFetch(domain:encyclopediavirginia.org)",
-      "WebFetch(domain:theconversation.com)"
+      "WebFetch(domain:theconversation.com)",
+      "Bash(npm i:*)",
+      "Bash(npm audit:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm view:*)"
     ]
   }
 }
