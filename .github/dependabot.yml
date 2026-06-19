@@ -9,3 +9,7 @@ updates:
     directory: "/school-myths-app" # Location of package manifests
     schedule:
       interval: "weekly"
+  - package-ecosystem: "github-actions" # Keeps SHA-pinned workflow actions updated
+    directory: "/" # Workflow files live in .github/workflows/
+    schedule:
+      interval: "weekly"
